@@ -4,7 +4,7 @@ const users = JSON.parse(
 );
 
 
-getAllUsers = (req, res) => {
+exports.getAllUsers = (req, res) => {
   res
     .status(200)
     .json({ status: 'success', results: users.length, data: { users: users } });
